@@ -25,7 +25,9 @@ async function createCards() {
     const col = document.createElement("div")
     col.classList = "col"
     col.innerHTML = characters(result)
-    app.appendChild(col)
+    // app.appendChild(col)
+    //not needed anymore
+    app.insertBefore(col, app.firstChild)
   })
 }
 
