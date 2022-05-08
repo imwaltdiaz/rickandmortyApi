@@ -25,19 +25,29 @@ async function createCards() {
     const col = document.createElement("div")
     col.classList = "col"
     col.innerHTML = characters(result)
-    // app.appendChild(col)
-    //not needed anymore
     app.insertBefore(col, app.firstChild)
   })
 }
-
+ // https://css-tricks.com/template-literals/
 function characters (character){
+  let color = function(){
+    if(character.status === "Dead"){
+      color = "badge bg-danger"
+    }
+    else if(character.status === "Alive"){
+      color = "badge bg-success"
+    }
+    else{
+      color = "badge bg-secondary"
+    }
+  }
+  color()
   return`
   <div class="card h-100">
     <img class="card-img-top lazy" src="${character.image}" alt="">
     <div class="card-body">
       <h5 class="card-title">${character.name}</h5>
-      <span id="span" class="badge bg-success">${character.status}</span>
+      <span id="span" class="${color}">${character.status}</span>
     </div>
   </div>
   `
