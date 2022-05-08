@@ -6,6 +6,6 @@ In this readme I'll show my road to build this
 
 The api is https://rickandmortyapi.com/api
 
-The road is ended, it took me some time, but I'm proud of this solo project, next one will be a plugin, so for now I ended this project domaining the dom manipulation, JS asyncronous, data structures, and api manipulation, and bootstrap!
+The road is ended, it took me some time, but I'm proud of this solo project, next one will be a plugin, so for now I ended this project domaining the dom manipulation, JS asyncronous, data structures, lazy loading, api manipulation, and bootstrap!
 
 - Walter Diaz
