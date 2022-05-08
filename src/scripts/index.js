@@ -44,7 +44,7 @@ function characters (character){
   color()
   return`
   <div class="card h-100">
-    <img class="card-img-top lazy" src="${character.image}" alt="">
+    <img class="card-img-top lazy" src="${character.image}" loading="lazy" alt="">
     <div class="card-body">
       <h5 class="card-title">${character.name}</h5>
       <span id="span" class="${color}">${character.status}</span>
